@@ -1,0 +1,40 @@
+{
+  "name": "@flora-spikes/experiment-2",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Experiment 2: tldraw + Vue 3 + veaury — SVG-native plant rendering",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:check": "vue-tsc --noEmit && vite build",
+    "type-check": "vue-tsc --noEmit",
+    "lint": "eslint src --ext .ts,.tsx,.vue",
+    "benchmark": "node benchmark/run.mjs",
+    "benchmark:report": "node benchmark/report.mjs"
+  },
+  "dependencies": {
+    "pinia": "^2.2.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tldraw": "^4.5.9",
+    "veaury": "^2.6.3",
+    "vue": "^3.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
+    "@vitejs/plugin-react": "^4.3.0",
+    "@vitejs/plugin-vue": "^5.1.0",
+    "@vue/eslint-config-typescript": "^13.0.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-vue": "^9.28.0",
+    "playwright": "^1.59.1",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.0",
+    "vue-tsc": "^2.1.0"
+  }
+}
