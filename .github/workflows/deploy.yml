@@ -2,9 +2,9 @@ name: Deploy experiment-2 to GitHub Pages
 
 on:
   push:
-    branches: [main]
+    branches: [master]
     paths:
-      - 'derisking-experiments/experiment-2/**'
+      - '**'
   workflow_dispatch:
 
 permissions:
@@ -39,7 +39,7 @@ jobs:
 
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: derisking-experiments/experiment-2/dist
+          path: dist
 
   deploy:
     needs: build
